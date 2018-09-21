@@ -1,0 +1,15 @@
+.landing-page {
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  background-color: #3780B3;
+  text-align: center;
+  .intro {
+    font-size: 2em;
+    width: 80%;
+    position: absolute;
+    top:40%;
+    left: 10%;
+    right: 10%;
+    text-align: left;
+  }
+}

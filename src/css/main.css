@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Work+Sans");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white; }
+
+header {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 100vw;
+  display: inline-block;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  /*
+   * Made by Erik Terwan
+   * 24th of November 2015
+   * MIT License
+   *
+   *
+   * If you are thinking of using this in
+   * production code, beware of the browser
+   * prefixes.
+   */
+  /*
+   * Just a quick hamburger
+   */
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  /*
+   * But let's hide the middle one.
+   */
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */ }
+  header .logo {
+    position: relative;
+    left: 10px;
+    font-size: 2.5em;
+    color: white;
+    font-family: "Work Sans", sans-serif; }
+  header .menu {
+    position: absolute;
+    top: -38px;
+    right: 70px; }
+  header a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease; }
+  header a:hover {
+    color: #4d4d4d; }
+  header #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none; }
+  header #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  header #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 6px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  header #menuToggle span:first-child {
+    transform-origin: 0% 0%; }
+  header #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  header #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: silver; }
+  header #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  header #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+  header #menu {
+    width: 150px;
+    background: transparent;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  header #menu li {
+    padding: 10px 0;
+    font-size: 22px; }
+  header #menuToggle input:checked ~ ul {
+    transform: none; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.landing-page {
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  background-color: #3780B3;
+  text-align: center; }
+  .landing-page .intro {
+    font-size: 2em;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    text-align: left; }
+
+.zen-garden {
+  height: 100vh;
+  background-color: lightgreen; }
+
+/*# sourceMappingURL=main.css.map */

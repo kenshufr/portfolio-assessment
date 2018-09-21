@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 100vw;
+  display: inline-block;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  .logo {
+    position: relative;
+    left: 10px;
+    font-size: 2.5em;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+  }
+  @import "_menu.scss"
+  // clean up code
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
