@@ -157,4 +157,8 @@ header {
   height: 100vh;
   background-color: lightgreen; }
 
+.ruby-terminal {
+  height: 100vh;
+  background-color: red; }
+
 /*# sourceMappingURL=main.css.map */

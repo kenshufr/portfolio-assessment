@@ -12,6 +12,7 @@
   <div id="top">
     <!-- scroll to top fuction- maybe unnecessary -->
   </div> 
+
   <header>    
     <a href="#top" class="logo">KS.</a>
     <nav class="menu">
@@ -29,14 +30,29 @@
           </div>
     </nav>
   </header>
+
   <section class="landing-page">
     <div class="intro">
       <p>Hi, I’m Ken Shu - an aspiring full stack web developer.</p>
     </div>
   </section>
+
   <section class="zen-garden">
     <h2>Zen Garden</h2>
     <p>A showcase of visual design using purely CSS</p>
   </section>
+
+  <section class="ruby-terminal">
+    <h2>Ruby Terminal App</h2>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.scrollify.js"></script>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : "section",
+      });
+    });
+  </script>
 </body>
 </html>
