@@ -1,0 +1,17 @@
+$(function() {
+  $.scrollify({
+    section : "section",
+  });
+});
+$( "#home-link" ).click(function() {
+  $.scrollify.move("#landing-page-section");
+})
+$( "#projects-link" ).click(function() {
+  $.scrollify.move("#zen-garden-section");
+})
+$( "#about-link" ).click(function() {
+  $.scrollify.move("#about-me-section");
+})
+$( "#contact-link" ).click(function() {
+  $.scrollify.move("#contact-section");
+})
