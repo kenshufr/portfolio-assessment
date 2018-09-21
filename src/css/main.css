@@ -53,12 +53,13 @@ header {
     position: absolute;
     top: -38px;
     right: 70px; }
-  header a {
+  header li {
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease; }
-  header a:hover {
-    color: #4d4d4d; }
+  header li:hover {
+    color: #4d4d4d;
+    cursor: pointer; }
   header #menuToggle {
     display: block;
     position: relative;
@@ -115,7 +116,8 @@ header {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
   header .menu-links li {
     padding: 10px 0;
-    font-size: 22px; }
+    font-size: 22px;
+    color: white; }
   header #menuToggle input:checked ~ ul {
     transform: none; }
 

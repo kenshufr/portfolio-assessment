@@ -15,16 +15,17 @@
   right: 70px;
 }
 
- a
+ li
  {
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
  }
  
- a:hover
+ li:hover
  {
    color: rgb(77, 77, 77);
+   cursor: pointer;
  }
  
  #menuToggle
@@ -145,6 +146,7 @@
  {
    padding: 10px 0;
    font-size: 22px;
+   color: white;
  }
 
  #menuToggle input:checked ~ ul

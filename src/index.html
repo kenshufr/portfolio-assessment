@@ -22,35 +22,35 @@
             <span></span>
             <span></span>
             <ul class="menu-links">
-              <a id="home-link" href="#"><li>Home</li></a>
-              <a href="#zen-garden"><li>Projects</li></a>
-              <a href="#about-me"><li>About</li></a>
-              <a href="#contact"><li>Contact</li></a>
+              <li id="home-link">Home</li></a>
+              <li id="projects-link">Projects</li></a>
+              <li id="about-link">About</li></a>
+              <li id="contact-link">Contact</li></a>
             </ul>
           </div>
     </nav>
   </header>
 
-  <section class="landing-page" id="landing-page">
+  <section class="landing-page" data-section-name="landing-page-section">
     <div class="intro">
       <p>Hi, I’m Ken Shu - an aspiring full stack web developer.</p>
     </div>
   </section>
 
-  <section class="about-me" id="about-me">
-    <h2>About Me</h2>
-  </section>
-
-  <section class="zen-garden" id="zen-garden">
+  <section class="zen-garden" data-section-name="zen-garden-section">
     <h2>Zen Garden</h2>
     <p>An example of visual design using purely CSS</p>
   </section>
 
-  <section class="ruby-terminal" id="zen-garden">
+  <section class="ruby-terminal" data-section-name="ruby-terminal-section">
     <h2>Ruby Terminal App</h2>
   </section>
 
-  <section class="contact" id="contact" data-section-name="contact-section">
+  <section class="about-me" data-section-name="about-me-section">
+    <h2>About Me</h2>
+  </section>
+
+  <section class="contact" data-section-name="contact-section">
     <h2>Contact</h2>
   </section>
 
@@ -63,6 +63,15 @@
       });
     });
     $( "#home-link" ).click(function() {
+      $.scrollify.move("#landing-page-section");
+    })
+    $( "#projects-link" ).click(function() {
+      $.scrollify.move("#zen-garden-section");
+    })
+    $( "#about-link" ).click(function() {
+      $.scrollify.move("#about-me-section");
+    })
+    $( "#contact-link" ).click(function() {
       $.scrollify.move("#contact-section");
     })
   </script>
