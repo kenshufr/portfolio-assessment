@@ -122,7 +122,7 @@
   * Make this absolute positioned
   * at the top left of the screen
   */
- #menu
+ .menu-links
  {
   //  position: absolute;
   //  width: 300px;
@@ -141,7 +141,7 @@
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
  
- #menu li
+ .menu-links li
  {
    padding: 10px 0;
    font-size: 22px;

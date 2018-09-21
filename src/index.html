@@ -21,30 +21,39 @@
             <span></span>
             <span></span>
             <span></span>
-            <ul id="menu">
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>Projects</li></a>
-              <a href="#"><li>About</li></a>
-              <a href="#"><li>Contact</li></a>
+            <ul class="menu-links">
+              <a id="home-link" href="#"><li>Home</li></a>
+              <a href="#zen-garden"><li>Projects</li></a>
+              <a href="#about-me"><li>About</li></a>
+              <a href="#contact"><li>Contact</li></a>
             </ul>
           </div>
     </nav>
   </header>
 
-  <section class="landing-page">
+  <section class="landing-page" id="landing-page">
     <div class="intro">
       <p>Hi, I’m Ken Shu - an aspiring full stack web developer.</p>
     </div>
   </section>
 
-  <section class="zen-garden">
-    <h2>Zen Garden</h2>
-    <p>A showcase of visual design using purely CSS</p>
+  <section class="about-me" id="about-me">
+    <h2>About Me</h2>
   </section>
 
-  <section class="ruby-terminal">
+  <section class="zen-garden" id="zen-garden">
+    <h2>Zen Garden</h2>
+    <p>An example of visual design using purely CSS</p>
+  </section>
+
+  <section class="ruby-terminal" id="zen-garden">
     <h2>Ruby Terminal App</h2>
   </section>
+
+  <section class="contact" id="contact" data-section-name="contact-section">
+    <h2>Contact</h2>
+  </section>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/jquery.scrollify.js"></script>
   <script>
@@ -53,6 +62,9 @@
         section : "section",
       });
     });
+    $( "#home-link" ).click(function() {
+      $.scrollify.move("#contact-section");
+    })
   </script>
 </body>
 </html>

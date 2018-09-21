@@ -1,3 +1,5 @@
+// TODO menu links not responsive
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Work+Sans');
 
 * { 
@@ -17,10 +19,28 @@ $grey: rgb(192,192,192);
 
 .zen-garden {
   height: 100vh;
-  background-color: lightgreen;
+  background-color: rgb(101, 236, 101);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .ruby-terminal {
   height: 100vh;
-  background-color: red;
+  background-color: rgb(255, 91, 91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-me {
+  height: 100vh;
+  background-color: grey;
+}
+
+.contact {
+  height: 100vh;
+  background-color: black;
 }
