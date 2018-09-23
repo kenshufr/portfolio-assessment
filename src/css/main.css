@@ -25,6 +25,8 @@ header {
    * If you are thinking of using this in
    * production code, beware of the browser
    * prefixes.
+   * 
+   * Edited by Ken Shu
    */
   /*
    * Just a quick hamburger
@@ -78,9 +80,7 @@ header {
     left: -5px;
     cursor: pointer;
     opacity: 0;
-    /* hide this */
     z-index: 2;
-    /* and place it over the hamburger */
     -webkit-touch-callout: none; }
   header #menuToggle span {
     display: block;
@@ -163,7 +163,8 @@ section {
     section .words .under-text {
       display: flex;
       flex-flow: row wrap; }
-      section .words .under-text a {
+      section .words .under-text .buttons {
+        cursor: pointer;
         background: transparent;
         border-color: white;
         border: solid;
@@ -178,7 +179,7 @@ section {
         font-size: .75em;
         font-weight: 700;
         line-height: 1.2em; }
-        section .words .under-text a:hover {
+        section .words .under-text .buttons:hover {
           background: white;
           color: #616161;
           border-color: white; }
@@ -198,21 +199,20 @@ section {
         max-width: 600px;
         max-height: 400px; } }
   section .chevron {
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     left: auto;
-    right: auto; }
+    right: auto;
+    cursor: pointer; }
     section .chevron img {
       width: auto;
       height: auto;
       max-height: 20px;
-      max-width: 40px; }
+      max-width: 40px;
+      animation: testbounce 4s infinite ease; }
 
 .landing-page {
   background-color: #3780B3; }
-  .landing-page .words p {
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s; }
 
 .zen-garden {
   background-color: #39a87c; }
@@ -224,10 +224,16 @@ section {
   background-color: grey; }
 
 .contact {
-  background-color: black; }
+  background-color: black;
+  background: linear-gradient(to bottom, black 0%, black 20%, #000000 20%, white 20%, white 100%); }
 
 .about-me img {
   border-radius: 10px; }
+
+section.contact .words h2 {
+  color: black; }
+section.contact .words .break {
+  background-color: grey; }
 
 @keyframes fadein {
   from {
@@ -292,5 +298,15 @@ section {
   to {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); } }
+@keyframes testbounce {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0); }
+  50% {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%); }
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0); } }
 
 /*# sourceMappingURL=main.css.map */

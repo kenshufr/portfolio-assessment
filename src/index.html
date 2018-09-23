@@ -13,18 +13,18 @@
 </head>
 <body>
   <header>    
-    <div class="logo" id="logo">KS.</div>
+    <div class="logo home-link">KS.</div>
     <nav class="menu">
       <div id="menuToggle">
-        <input type="checkbox" />
+        <input type="checkbox"/>
         <span></span>
         <span></span>
         <span></span>
         <ul class="menu-links">
-          <li id="home-link">Home</li></a>
-          <li id="projects-link">Projects</li></a>
-          <li id="about-link">About</li></a>
-          <li id="contact-link">Contact</li></a>
+          <li class="home-link">Home</li></a>
+          <li class="projects-link">Projects</li></a>
+          <li class="about-link">About</li></a>
+          <li class="contact-link">Contact</li></a>
         </ul>
       </div>
     </nav>
@@ -34,8 +34,12 @@
     <div class="words">
       <p class="aniview" data-av-animation="fadeIn">Hi, I’m Ken - an aspiring full stack web developer.<p>
       <div class="break"></div>
+      <div class="under-text">
+        <div class="buttons contact-link">Social</div>
+        <div class="buttons projects-link">Works</div>
+      </div>
     </div>
-    <div class="chevron" id="chevron">
+    <div class="chevron">
       <img src="img/chevron-down.png" alt="chevron down">
     </div>
   </section>
@@ -46,14 +50,11 @@
       <p class="aniview" data-av-animation="fadeIn">My take on a responsive web design using purely CSS.</p>
       <div class="break"></div>
       <div class="under-text">
-        <a href="http://htmlpreview.github.io/?https://github.com/kenshufr/CoderAcademy-zengarden/blob/master/index.html" target="_blank">Visit</a>
-        <a href="https://github.com/kenshufr/CoderAcademy-zengarden/" target="_blank">Github</a>
+        <a class="buttons"href="http://htmlpreview.github.io/?https://github.com/kenshufr/CoderAcademy-zengarden/blob/master/index.html" target="_blank">Visit</a>
+        <a class="buttons" href="https://github.com/kenshufr/CoderAcademy-zengarden/" target="_blank">Github</a>
       </div>
     </div>
     <img src="img/zen-garden-responsive.png" alt="zen garden on different devices">
-    <div class="chevron" id="chevron">
-      <img src="img/chevron-down.png" alt="chevron down">
-    </div>
   </section>
 
   <section class="ruby-terminal" data-section-name="ruby-terminal-section">
@@ -62,13 +63,10 @@
       <p class="aniview" data-av-animation="fadeIn">Coded in Ruby with parsing, editing and storage functionality for a command-line interface.</p>
       <div class="break"></div>
       <div class="under-text">
-        <a href="https://github.com/ImBlakeDoyle/terminal_app">Github</a>
+        <a class="buttons" href="https://github.com/ImBlakeDoyle/terminal_app">Github</a>
       </div>
     </div>
     <img src="img/terminal-app.gif" alt="app screenshot">
-    <div class="chevron" id="chevron">
-      <img src="img/chevron-down.png" alt="chevron down">
-    </div>
   </section>
 
   <section class="about-me" data-section-name="about-me-section">
@@ -84,9 +82,6 @@
       </div>
     </div>
     <img src="img/portrait.png" alt="my head">
-    <div class="chevron" id="chevron">
-      <img src="img/chevron-down.png" alt="chevron down">
-    </div>
   </section>
 
   <section class="contact" data-section-name="contact-section">
@@ -94,7 +89,19 @@
       <h2 class="aniview" data-av-animation="fadeInUp">Contact</h2>
       <p class="aniview" data-av-animation="fadeIn"></p>
       <div class="break"></div>
+      <div class="under-text">
+        <a href="https://github.com/kenshufr">
+          <img src="img/Github.svg" alt="github link">
+        </a>
+        <a href="https://www.linkedin.com/in/ken-shu-74a608171/">
+          <img src="img/Linkedin.svg" alt="linkedin link">
+        </a>
+        <a href="https://twitter.com/KenShu12472714">
+          <img src="img/Twitter.svg" alt="twitter link">
+        </a>
+      </div>
     </div>
+    <img src="img/Sharethis.svg" alt="connected sign">
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
