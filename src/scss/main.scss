@@ -29,17 +29,18 @@ section {
     justify-content: center;
     text-align: center;
   }
+
   .words {
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1em;
     text-align: left;
 
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: 1120px) {
       font-size: 2em;
-      width: 40%;
-      margin-left: 5%;
-      margin-right: 0;
+      width: 45%;
+      margin: 0 0 0 2%;
+      // flex: 1 1 auto;
     }
 
     h2 {
@@ -72,17 +73,17 @@ section {
         margin-top: .3em;
         margin-right: 1em;
         vertical-align: center;
-        text-transform: uppercase;
+        text-transform: lowercase;
         text-decoration: none;
         font-size: .75em;
         font-weight: 700;
         line-height: 1.2em;
-      }
 
-      a:hover {
-        background: white;
-        color: rgb(97, 97, 97);
-        border-color: white;
+        &:hover {
+          background: white;
+          color: rgb(97, 97, 97);
+          border-color: white;
+        }
       }
 
       img {
@@ -92,6 +93,7 @@ section {
         max-height: 1.5em;
         max-width: 1.5em;
       }
+      
     }
     
   } 
@@ -99,19 +101,26 @@ section {
     width: auto;
     height: auto;
     max-width: 300px;
-    margin: 10px 5% 2%;
+    margin: 10px 1% 5% 1%;
 
     @media only screen and (min-width: 760px) {
-      max-width: 350px;
-      max-height: 200px;
+      max-width: 600px;
+      max-height: 400px;
     }
-    @media only screen and (min-width: 1000px) {
-      max-width: 500px;
-      max-height: 300px;
-    }
-    @media only screen and (min-width: 1400px) {
-      max-width: 800px;
-      max-height: 500px;
+  }
+
+
+  .chevron {
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    right: auto;
+    
+    img {
+      width: auto;
+      height: auto;
+      max-height: 20px;
+      max-width: 40px;
     }
   }
 }
@@ -121,9 +130,7 @@ section {
 @import "_landing-page.scss";
 
 .zen-garden {
-  // background-color: #369436;
   background-color: #39a87c;
-  // background-color: #088C5A;
 }
 
 .ruby-terminal {
@@ -136,6 +143,10 @@ section {
 
 .contact {
   background-color: black;
+}
+
+.about-me img { 
+  border-radius: 10px;
 }
 
 @keyframes fadein {

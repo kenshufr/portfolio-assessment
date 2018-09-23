@@ -18,3 +18,6 @@ $( "#about-link" ).click(function() {
 $( "#contact-link" ).click(function() {
   $.scrollify.move("#contact-section");
 })
+$( "#chevron" ).click(function() {
+  $.scrollify.next();
+})

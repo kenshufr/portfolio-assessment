@@ -142,12 +142,11 @@ section {
     margin-right: 10%;
     font-size: 1em;
     text-align: left; }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: 1120px) {
       section .words {
         font-size: 2em;
-        width: 40%;
-        margin-left: 5%;
-        margin-right: 0; } }
+        width: 45%;
+        margin: 0 0 0 2%; } }
     section .words h2 {
       margin-bottom: .4em;
       font-size: .6em;
@@ -174,15 +173,15 @@ section {
         margin-top: .3em;
         margin-right: 1em;
         vertical-align: center;
-        text-transform: uppercase;
+        text-transform: lowercase;
         text-decoration: none;
         font-size: .75em;
         font-weight: 700;
         line-height: 1.2em; }
-      section .words .under-text a:hover {
-        background: white;
-        color: #616161;
-        border-color: white; }
+        section .words .under-text a:hover {
+          background: white;
+          color: #616161;
+          border-color: white; }
       section .words .under-text img {
         margin-right: .5em;
         width: auto;
@@ -193,19 +192,21 @@ section {
     width: auto;
     height: auto;
     max-width: 300px;
-    margin: 10px 5% 2%; }
+    margin: 10px 1% 5% 1%; }
     @media only screen and (min-width: 760px) {
       section img {
-        max-width: 350px;
-        max-height: 200px; } }
-    @media only screen and (min-width: 1000px) {
-      section img {
-        max-width: 500px;
-        max-height: 300px; } }
-    @media only screen and (min-width: 1400px) {
-      section img {
-        max-width: 800px;
-        max-height: 500px; } }
+        max-width: 600px;
+        max-height: 400px; } }
+  section .chevron {
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    right: auto; }
+    section .chevron img {
+      width: auto;
+      height: auto;
+      max-height: 20px;
+      max-width: 40px; }
 
 .landing-page {
   background-color: #3780B3; }
@@ -224,6 +225,9 @@ section {
 
 .contact {
   background-color: black; }
+
+.about-me img {
+  border-radius: 10px; }
 
 @keyframes fadein {
   from {
