@@ -1,7 +1,7 @@
 [Published Portfolio website](https://kenshufr.github.io/)\
 [Portfolio assessment backup Github repo](https://github.com/kenshufr/portfolio-assessment)\
 [Portfolio website repo](https://github.com/kenshufr/kenshufr.github.io)\
-#Website blurb
+
 ##Purpose
 The purpose of my website is to host and showcase in an interesting way to those interested my previous works, as well as being centralised hub for anything to do with me and social media.
 
@@ -35,7 +35,7 @@ I did not view many other portfolios online, but I have listed a few that I admi
 [Principal design agency](http://www.principals.com.au/)\
 [Tinyhunter design agency](https://tinyhunter.com.au/)\
 [Adham- web developer](www.adhamdannaway.com/)\
-[Awwwards minimal sites](https://www.awwwards.com/websites/minimal/)\
+[Awwwards minimal sites](https://www.awwwards.com/websites/minimal/)
 
 While browsing through other web developer portfolios online, I personally felt 3 pain points:
  - websites that were hard to find all the information you needed
@@ -58,9 +58,9 @@ jQuery was used pretty much as a necessity, as it turns out CSS snap-scrolling i
 
 
 ##Wireframes
-![landing page wireframe](docs/page-1.png)
-![tinted zen garden wireframe](docs/page-2.png)
-![project explanation wireframe](docs/page-3.png)
+![landing page wireframe](docs/wireframe-page-1.png)
+![tinted zen garden wireframe](docs/wireframe-page-2.png)
+![project explanation wireframe](docs/wireframe-page-3.png)
 ![desktop wireframe](docs/wireframe-desktop.png)
 ![tablet portrait wireframe](docs/wireframe-tablet.png)
 
@@ -87,17 +87,28 @@ The HTML/CSS portion was mostly finalised by Saturday, and the documentation was
 ###Describe key events in the development of the internet from the 1980s to today.
 
 1980 - Tim Berners-Lee builds ENQUIRE, an early hypertext-using software model in which textual data can be shared and presented between devices in a network
+
 1989 - Tim Berners-Lee authors a proposal for "a large hypertext database with typed links", in which he coins the term 'world wide web'
 1990 - Time Berners-Lee finalises HTTP v0.9 and HTML, as well as the world's first HTTP server and web browser 
+
 1992 - Erwise, the world's first cross-platform web browser by Pei-Yuan Wei is tested successfully
+
 1993 - Mosaic, later known as Netscape, is released and popularises the web as it was a gui web browser
+
 1994 - World Wide Web Consortium (W3C) is established by Tim-Berners-Lee with MIT, DARPA and the EC to maintain internet standards
-1998 - Google is formed in US.
+
+1998 - Google is formed in US, and creates the world's most popular search engine
+
 1999 - Napster, the music file-sharing program is created, sparking discussions of internet piracy
+
 1999 - Rapid commercialisation of the internet culminates in the dot-com bubble
+
 2001 - Internet affordability is widely observed, mainly due to overcapacity as a result of the dot-com bust.
+
 2002 and beyong - Rise of user-created content in the form of blogs, Youtube, Wikipedia etc. is coined as the Web 2.0
+
 2008 - HTML5 is released to the public, resulting in much more appealing web interfaces
+
 2014 - Mobile internet usage exceeds Desktop internet usage per capita
 
 ###Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers.
