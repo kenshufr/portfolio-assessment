@@ -14,40 +14,8 @@ header {
     font-size: 2.5em;
     color: white;
     font-family: "Work Sans", sans-serif;
+    cursor: pointer;
   }
   @import "_menu.scss"
   // clean up code
-}
-
-@keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-moz-keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-o-keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity: 1;
-  }
 }

@@ -15,32 +15,169 @@ $grey: rgb(192,192,192);
 @import "_header.scss";
 // clean up hamburger menu
 
+section {
+  height: 100vh;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  // @media only screen and (min-width:1000px) {
+  //   flex-flow: row wrap;
+  //   align-items: center;
+  //   justify-content: center;
+  //   text-align: center;
+  // }
+  .words {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    text-align: left;
+
+    @media only screen and (min-width: 640px) {
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-bottom: .4em;
+      font-size: .6em;
+      color: lightgrey;
+    }
+    .break {
+      margin: .6em 0 .8em;
+      width: 50%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: white;
+      animation: growleft 2s;
+      transform-origin: left;
+      -webkit-transform-origin: left;
+    }
+    a {
+
+    }
+  } 
+  img {
+    width: 300px;
+    margin: 10% 0 5%;
+
+    @media only screen and (min-width: 760px) {
+      width: 350px;
+    }
+  }
+}
+
+
+
 @import "_landing-page.scss";
 
 .zen-garden {
-  height: 100vh;
-  background-color: rgb(101, 236, 101);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  // background-color: #369436;
+  background-color: #39a87c;
+  // background-color: #088C5A;
 }
 
 .ruby-terminal {
-  height: 100vh;
-  background-color: rgb(255, 91, 91);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-color: #e94242;
 }
 
 .about-me {
-  height: 100vh;
   background-color: grey;
 }
 
 .contact {
-  height: 100vh;
   background-color: black;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+@keyframes fadeup {
+  from {
+      opacity:0;
+      transform: translate3d(0, 100%, 0);
+      -webkit-transform: translate3d(0, 100%, 0);
+  }
+  to {
+      opacity:1;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadedown {
+  from {
+      opacity:0;
+      transform: translate3d(0, -100%, 0);
+      -webkit-transform: translate3d(0, -100%, 0);
+  }
+  to {
+      opacity:1;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes growleft {
+  from {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
 }

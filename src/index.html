@@ -7,43 +7,55 @@
   <title>Ken Shu</title>
   <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+ 
 </head>
 <body>
-  <div id="top">
-    <!-- scroll to top fuction- maybe unnecessary -->
-  </div> 
-
   <header>    
-    <a href="#top" class="logo">KS.</a>
+    <div class="logo" id="logo">KS.</div>
     <nav class="menu">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="menu-links">
-              <li id="home-link">Home</li></a>
-              <li id="projects-link">Projects</li></a>
-              <li id="about-link">About</li></a>
-              <li id="contact-link">Contact</li></a>
-            </ul>
-          </div>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu-links">
+          <li id="home-link">Home</li></a>
+          <li id="projects-link">Projects</li></a>
+          <li id="about-link">About</li></a>
+          <li id="contact-link">Contact</li></a>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <section class="landing-page" data-section-name="landing-page-section">
-    <div class="intro">
-      <p>Hi, I’m Ken Shu - an aspiring full stack web developer.</p>
+    <div class="words">
+      <p class="aniview" data-av-animation="fadeIn">Hi, I’m Ken - an aspiring full stack web developer.<p>
+      <div class="break"></div>
     </div>
   </section>
 
   <section class="zen-garden" data-section-name="zen-garden-section">
-    <h2>Zen Garden</h2>
-    <p>An example of visual design using purely CSS</p>
+    <div class="words">
+      <h2>Zen Garden</h2>
+      <p class="aniview" data-av-animation="fadeIn">My take on a responsive web design using purely CSS.</p>
+      <div class="break"></div>
+      <a href="http://htmlpreview.github.io/?https://github.com/kenshufr/CoderAcademy-zengarden/blob/master/index.html" target="_blank"><button>Visit</button></a>
+      <a href="https://github.com/kenshufr/CoderAcademy-zengarden/" target="_blank"><button>Github</button></a>
+    </div>
+    <img src="img/zen-garden-responsive.png">
   </section>
 
   <section class="ruby-terminal" data-section-name="ruby-terminal-section">
-    <h2>Ruby Terminal App</h2>
+    <div class="words">
+      <h2>Student Database Terminal App</h2>
+      <p>Coded in Ruby with parsing, editing and storage functionality for a command-line interface.</p>
+      <div class="break"></div>
+      <a href="https://github.com/ImBlakeDoyle/terminal_app"><button>Github</button></a>
+    </div>
+    <img src="img/terminal-app.gif">
   </section>
 
   <section class="about-me" data-section-name="about-me-section">
@@ -52,10 +64,17 @@
 
   <section class="contact" data-section-name="contact-section">
     <h2>Contact</h2>
+    <div class="break"></div>
   </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/jquery.scrollify.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.aniview').AniView();
+    });
+  </script>
 </body>
 </html>

@@ -48,7 +48,8 @@ header {
     left: 10px;
     font-size: 2.5em;
     color: white;
-    font-family: "Work Sans", sans-serif; }
+    font-family: "Work Sans", sans-serif;
+    cursor: pointer; }
   header .menu {
     position: absolute;
     top: -38px;
@@ -117,9 +118,64 @@ header {
   header .menu-links li {
     padding: 10px 0;
     font-size: 22px;
-    color: white; }
+    color: lightgrey; }
   header #menuToggle input:checked ~ ul {
     transform: none; }
+  header #menuToggle input:checked ~ #span {
+    background: lightgrey; }
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+  section .words {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    text-align: left; }
+    @media only screen and (min-width: 640px) {
+      section .words {
+        font-size: 2em; } }
+    section .words h2 {
+      margin-bottom: .4em;
+      font-size: .6em;
+      color: lightgrey; }
+    section .words .break {
+      margin: .6em 0 .8em;
+      width: 50%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: white;
+      animation: growleft 2s;
+      transform-origin: left;
+      -webkit-transform-origin: left; }
+  section img {
+    width: 300px;
+    margin: 10% 0 5%; }
+    @media only screen and (min-width: 760px) {
+      section img {
+        width: 350px; } }
+
+.landing-page {
+  background-color: #3780B3; }
+  .landing-page .words p {
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s; }
+
+.zen-garden {
+  background-color: #39a87c; }
+
+.ruby-terminal {
+  background-color: #e94242; }
+
+.about-me {
+  background-color: grey; }
+
+.contact {
+  background-color: black; }
 
 @keyframes fadein {
   from {
@@ -141,42 +197,48 @@ header {
     opacity: 0; }
   to {
     opacity: 1; } }
-.landing-page {
-  height: 100vh;
-  font-family: "Work Sans", sans-serif;
-  background-color: #3780B3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-  .landing-page .intro {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 2em;
-    text-align: left; }
-
-.zen-garden {
-  height: 100vh;
-  background-color: #65ec65;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-.ruby-terminal {
-  height: 100vh;
-  background-color: #ff5b5b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-.about-me {
-  height: 100vh;
-  background-color: grey; }
-
-.contact {
-  height: 100vh;
-  background-color: black; }
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes fadeup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes fadedown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes fadedown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes growleft {
+  from {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0); }
+  to {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
 
 /*# sourceMappingURL=main.css.map */

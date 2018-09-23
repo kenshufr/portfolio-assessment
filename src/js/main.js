@@ -3,6 +3,9 @@ $(function() {
     section : "section",
   });
 });
+$( "#logo" ).click(function() {
+  $.scrollify.move("#landing-page-section");
+})
 $( "#home-link" ).click(function() {
   $.scrollify.move("#landing-page-section");
 })

@@ -146,10 +146,14 @@
  {
    padding: 10px 0;
    font-size: 22px;
-   color: white;
+   color: lightgrey;
  }
 
  #menuToggle input:checked ~ ul
  {
    transform: none;
+ }
+
+ #menuToggle input:checked ~ #span {
+   background: lightgrey;
  }
